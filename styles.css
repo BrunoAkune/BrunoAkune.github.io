@@ -1,0 +1,602 @@
+
+* {
+  font-family: Roboto;
+  font-size: 20px;
+}
+main {
+  margin: 100px auto;
+  width: 80%;
+  }
+  
+h1, h2, h3, h4{
+  padding: 0 40px;
+}
+
+h1{
+  font-size: 32px;
+}
+
+p{
+  padding: 20px 40px;
+  max-width: 75ch; /* Target body element and set max line length to 75 characters */
+  overflow-wrap: break-word; /* Allow breaking words within long ones to fit the line */  
+}
+
+a:link { 
+  text-decoration: none;
+  color: inherit; 
+} 
+a:visited { 
+  text-decoration: none; 
+  color: inherit;
+} 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #02587D; /* Changed font color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 10; /* Ensure it stays on top of other elements */
+  }
+  
+  .logo a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+ 
+  .menu {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .menu li {
+    color:#02587D;
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+  }
+  
+.index{
+  margin: none;
+  width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 280px auto; /* Define row heights */
+    grid-gap: 0px; /* Adjust spacing between grid items */
+    margin: 0 auto; /* Center the grid horizontally */
+  }
+  
+  .grid-item {
+    width: 100%; /* Ensures items fill available space */
+    background-color: #f0f0f0; /* Optional background color */
+   /* padding: 20px;* Optional padding */
+    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+  }
+  
+  .grid-container--inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define columns for inner grid */
+  }
+
+  /* Responsive behavior for smaller screens */
+  
+  @media only screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-rows: auto auto;  /* Adjust row heights for small screens */
+    }
+    .grid-container--inner {
+      grid-template-columns: 1fr;  /* Stack items on top of each other */
+    }
+    .grid-item--large {
+      height: auto; /* Allow larger items to adjust height on small screens */
+    }
+  }
+  
+  /* Custom styles for full-width item (optional) */
+  
+  .grid-item--full {
+    height: 280px;
+    /* position: relative; /* Needed for overlay positioning */
+    background-color: white;
+    background-image: url(img/index/Toronto.jpg);
+    background-position: center;
+  }
+  
+  /* Optional styles for large and small items (optional) */
+  
+  .grid-item--large1 {
+    height: 270px;
+    width: 100%;
+    color:white;
+    background-image: url(img/index/TechFleet.jpg);
+    background-color: #22ADC9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .grid-item--small1 {
+    height: 270px;
+    background-image: url(img/index/Bruno\ Akune\ UX\ Design\ Portfolio.pptx.jpg);
+    color:white;
+    background-color: #212121;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .grid-item--large2 {
+    height: 270px;
+    background-image: url(img/index/CER.png);
+    color:white;
+    background-color: #DE6664;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .grid-item--small2 {
+    height: 270px;
+    background-image: url(img/index/about\ me\ photo.jpg);
+    color:white;
+    background-color: #b93800;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .grid-item-paragraph{
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .overlay {
+    position: relative; /* Position the overlay div absolutely within the parent div */
+    top: 0; /* Position the element at the top of the div */
+    left: 0; /* Position the element at the left of the div */
+    width: 100%; /* Set the width to cover the entire parent div */
+    height: 100%; /* Set the height to cover the entire parent div */
+    background-color: rgba(58, 58, 100, 0.7); /* White color with 50% opacity (adjust opacity as needed) */
+    z-index: 1; /* Set the stacking order to ensure the overlay is on top of the div content */
+    contain: layout paint; /* Contained within the main element */
+  }
+
+  .overlay2 {
+    position: relative; /* Position the overlay div absolutely within the parent div */
+    top: 0; /* Position the element at the top of the div */
+    left: 0; /* Position the element at the left of the div */
+    width: 100%; /* Set the width to cover the entire parent div */
+    height: 100%; /* Set the height to cover the entire parent div */
+    background-color: rgba(0, 180, 216, 0.7); /* White color with 50% opacity (adjust opacity as needed) */
+    z-index: 1; /* Set the stacking order to ensure the overlay is on top of the div content */
+    contain: layout paint; /* Contained within the main element */
+  }
+
+  .overlay3 {
+    position: relative; /* Position the overlay div absolutely within the parent div */
+    top: 0; /* Position the element at the top of the div */
+    left: 0; /* Position the element at the left of the div */
+    width: 100%; /* Set the width to cover the entire parent div */
+    height: 100%; /* Set the height to cover the entire parent div */
+    background-color: rgba(67, 137, 78, 0.7); /* White color with 50% opacity (adjust opacity as needed) */
+    z-index: 1; /* Set the stacking order to ensure the overlay is on top of the div content */
+    contain: layout paint; /* Contained within the main element */
+  }
+
+  .overlay4 {
+    position: relative; /* Position the overlay div absolutely within the parent div */
+    top: 0; /* Position the element at the top of the div */
+    left: 0; /* Position the element at the left of the div */
+    width: 100%; /* Set the width to cover the entire parent div */
+    height: 100%; /* Set the height to cover the entire parent div */
+    background-color: rgba(2, 88, 125, 0.7); /* White color with 50% opacity (adjust opacity as needed) */
+    z-index: 1; /* Set the stacking order to ensure the overlay is on top of the div content */
+    contain: layout paint; /* Contained within the main element */
+  }
+
+  .overlayhero {
+    position: relative; /* Position the overlay div absolutely within the parent div */
+    top: 0; /* Position the element at the top of the div */
+    left: 0; /* Position the element at the left of the div */
+    width: 100%; /* Set the width to cover the entire parent div */
+    height: 100%; /* Set the height to cover the entire parent div */
+    background-color: rgba(255, 255, 255, 0.7); /* White color with 50% opacity (adjust opacity as needed) */
+    z-index: 1; /* Set the stacking order to ensure the overlay is on top of the div content */
+    contain: layout paint; /* Contained within the main element */
+  }
+
+  .overlay:hover{
+    background-color: rgba(0, 0, 0, 0.3); /* White color with 50% opacity (adjust opacity as needed) */  
+  }
+
+  .overlay2:hover{
+    background-color: rgba(0, 0, 0, 0.3); /* White color with 50% opacity (adjust opacity as needed) */  
+  }
+    
+  
+  .overlay3:hover{
+    background-color: rgba(0, 0, 0, 0.3); /* White color with 50% opacity (adjust opacity as needed) */  
+  }
+
+  
+  .overlay4:hover{
+    background-color: rgba(0, 0, 0, 0.3); /* White color with 50% opacity (adjust opacity as needed) */  
+  }
+    
+    
+
+/* ABOUT ME PAGE */
+
+.container {
+  display: flex; /* Set the container to use flexbox */
+}
+
+.column1, .column2 {
+  flex: 1; /* Make both columns equally sized */
+  padding: 10px; /* Optional padding for content */
+  /* border: 1px solid black; */
+}
+
+.column1 img{
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column2 img{
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-container {
+  display: flex; /* Enables elements to sit next to each other */
+  justify-content: space-between; /* Distributes content evenly on the left and right */
+  margin: 8px 0;
+  padding: 0;
+}
+
+.left-text {
+  padding: 0 40px;
+  text-align: left;
+}
+
+.right-text {
+  padding: 0 40px;
+  text-align: right;
+}
+
+.abt-me-content {
+  padding: 0 40px;
+  margin: 0 8px 24px 8px;
+}
+
+.abt-me-title{
+  margin: 0;
+  padding: 0 40px;
+}
+
+
+hr{
+  margin: 20px 40px;
+}
+
+/* ABOUT ME PAGE */
+
+/* CER */
+.full-width-img{
+height: auto;
+/* background-color: grey; */
+width:80vw;
+margin: auto;
+}
+
+.full-width-img img{
+  width:100%;
+}
+
+.hero-img img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  position: top;
+}
+
+.margin {
+  margin: 0 0% 8% 0;
+}
+
+.grid-container-three {
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Defines 3 columns of equal width */
+  gap: 10px; /* Optional: spacing between grid items */
+}
+
+.grid-item-three {
+  background-color: #ffffff; /* Optional: background color for grid items */
+  padding: 10px; /* Optional: padding for grid items */
+}
+
+.grid-item-three ul{
+  padding: 0 40px;
+  margin: 0;
+}
+
+
+.grid-item-three li{
+  padding: 0 40px;
+}
+
+/* Base styles for columns (optional but improves readability) */
+.grid-container-three {
+  display: flex; /* Assuming you're using Flexbox for the three-column layout */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.grid-item-three {
+  flex: 1; /* Make columns flex equally */
+  padding: 10px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .grid-container-three {
+    flex-direction: column; /* Stack columns vertically on small screens */
+  }
+  .grid-item-three {
+    flex: 1 0 auto; /* Make each column take up full width on small screens */
+  }
+
+  .grid-item-three ul{
+    padding:0px;
+  }
+
+  .grid-item-three li{
+    padding: 0;
+    margin: 0 20px;
+  }
+}
+
+.container .column1 li{
+  padding: 0 40px;
+}
+
+.container .column2 li{
+  padding: 0 40px;
+}
+
+.interview-quest li{
+  padding: 0 40px;
+}
+
+
+/* Base styles for columns (optional but improves readability) */
+.container {
+  display: flex; /* Assuming you're using Flexbox for the two-column layout */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.column1 {
+  flex: 1; /* Make columns flex equally */
+  padding: 10px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack columns vertically on small screens */
+    width: fit-content; /* Allow div to adjust to image width */
+    height: fit-content; /* Allow div to adjust to image height */
+    overflow: hidden;
+  }
+  .column1 {
+    flex: 1 0 auto; /* Make each column take up full width on small screens */
+    height: auto;
+  }
+
+  .column1 img{
+    display: block;
+    object-fit: cover;
+  }
+}
+
+/* Mahalo */
+.half{
+  width:60%;
+  margin:0 auto;
+}
+
+ol li{
+  margin: 0 5%;
+}
+
+.fit img{
+  object-fit: contain;
+  background-color: #212121;
+}
+
+/* Tech Fleet */
+
+.threecontainer {
+  display: flex; /* Set the container to use flexbox */
+  width: 100%; /* Set the container width to 100% */
+}
+
+.featurea {
+  flex: 1; /* Make all columns flex equally */
+  margin: 0 10px;
+  padding: 10px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  border: 1px solid black;
+}
+
+/* Base styles for columns (optional but improves readability) */
+.threecontainer {
+  display: flex; /* Assuming you're using Flexbox for the three-column layout */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.featurea {
+  flex: 1; /* Make columns flex equally */
+  padding: 10px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .threecontainer {
+    flex-direction: column; /* Stack columns vertically on small screens */
+  }
+  .featurea {
+    flex: 1 0 auto; /* Make each column take up full width on small screens */
+  }
+}
+
+
+.implementation {
+  display: flex; /* Set the container to use flexbox */
+}
+
+.implementation1, .implementation2 {
+  flex: 1; /* Make both columns equally sized */
+  padding: 10px; /* Optional padding for content */
+  /* border: 1px solid black; */
+}
+
+.implementation1 img{
+  max-width: 100%;
+  height: 505px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: fill;
+}
+
+.implementation2 img{
+  max-width: 100%;
+  height: 555px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: fill;
+}
+
+/* Base styles for columns (optional but improves readability) */
+.implementation {
+  display: flex; /* Assuming you're using Flexbox for the two-column layout */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.implementation1 {
+  flex: 1; /* Make columns flex equally */
+  padding: 10px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.implementation1 {
+  flex: 1; /* Make columns flex equally */
+  padding: 10px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .implementation {
+    flex-direction: column; /* Stack columns vertically on small screens */
+  }
+  .implementation1 {
+    flex: 1 0 auto; /* Make each column take up full width on small screens */
+  }
+}
+
+
+
+/* ROBOTO FONT CSS */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/* ROBOTO FONT CSS */

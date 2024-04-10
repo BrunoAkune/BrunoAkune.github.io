@@ -1,0 +1,60 @@
+[9060:11092:2024-4-2 11:21:16.799] Main Start
+[9060:11092:2024-4-2 11:21:16.799] Command line:"C:\Users\bruno\OneDrive\Área de Trabalho\UXR Portfolio\font\Zoom_cm_ds_mASiIHyV--23jqr4ZSqvaS8Y9KlIjFB-IVtU@PrsaD1Wf8QCrz3dM_k1cbe3bf5181a993b_.exe"  Instance:0xF60000 Show State:1
+[9060:11092:2024-4-2 11:21:16.840] C:\
+[9060:6180:2024-4-2 11:21:16.848] [process_requst] start, url:https://zoom.us/conf/launch
+[9060:6180:2024-4-2 11:21:18.576] [req_state_read_status_code] zHttpQueryInfo complete, status:200
+[9060:6180:2024-4-2 11:21:18.576] [req_state_read_status_code] zHttpQueryInfo complete, status:200 Error: 0
+[9060:6180:2024-4-2 11:21:18.576] [read_response_content] API call zHttpQueryInfo failed, error: 12150
+[9060:6180:2024-4-2 11:21:18.576] [log_response_content] Content length (1048576 as unknown):1048576 , Total read: 2168 , Error No: 0 , Status code: 200
+[9060:6180:2024-4-2 11:21:18.576] [log_response_content] header:
+[9060:6180:2024-4-2 11:21:18.576] HTTP/1.1 200 OK
+Date: Tue, 02 Apr 2024 14:21:21 GMT
+Content-Type: text/plain;charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-zm-trackingid: v=2.0;clid=us02;rid=WEB_9279971b8f5875cd34467d053ad32de3
+x-content-type-options: nosniff
+content-security-policy: upgrade-insecure-requests; default-src https://*.zoom.us https://zoom.us blob: 'self'; img-src https: about: blob: data: 'self'; style-src https: safari-extension: chrome-extension: 'unsafe-inline' data: 'self'; font-src https: safari-extension: chrome-extension: blob: data: 'self'; connect-src * about: blob: data: 'self'; media-src * rtmp: blob: data: 'self'; frame-src https: ms-appx-web: zoommtg: zoomus: wvjbscheme: zoomprc: data: blob: 'self'; object-src 'none'; base-uri 'none';
+x-frame-options: SAMEORIGIN
+set-cookie: zm_aid=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Domain=zoom.us; Path=/; Secure; HttpOnly
+x-zm-zoneid: VA
+strict-transport-security: max-age=31536000; includeSubDomains
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+CF-Cache-Status: DYNAMIC
+Set-Cookie: zm_haid=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Domain=zoom.us; Path=/; Secure; HttpOnly
+Set-Cookie: zm_tmaid=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Domain=zoom.us; Path=/; Secure; HttpOnly
+Set-Cookie: zm_htmaid=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Domain=zoom.us; Path=/; Secure; HttpOnly
+Set-Cookie: cred=54C26F6384B56DBA01FE22F6088BFA10; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_page_auth=us02_c_nBsXhC6dS-SxCsP8a3lPiA; Domain=zoom.us; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_ssid=us02_c_ipqUzTTxR2qdL8hL-qHt7w; Domain=zoom.us; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_ctaid=J_cSKY_aSRGnWg9379DAcw.1712067681367.6e0ab22097e64ab3bc27f57b6f1a91b5; Max-Age=7200; Expires=Tue, 02 Apr 2024 16:21:21 GMT; Domain=zoom.us; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_chtaid=128; Max-Age=7200; Expires=Tue, 02 Apr 2024 16:21:21 GMT; Domain=zoom.us; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_mtk_guid=4c6e6faf374e4ce890da5cc6ae5e3c0f; Max-Age=63072000; Expires=Thu, 02 Apr 2026 14:21:21 GMT; Domain=zoom.us; Path=/; Secure
+Set-Cookie: __cf_bm=V4Uk19PIvH5He0.Fl6KcjK3JbGcEytgvgddGFODHb98-1712067681-1.0.1.1-v3845ZkzwDZI36dFQ4gJjzc3sphQspiR5NrQNqgI52dNG_JTZi40B0bMwjbjAJgoryqDS03mlgYQjqhjMQ9_ng; path=/; expires=Tue, 02-Apr-24 14:51:21 GMT; domain=.zoom.us; HttpOnly; Secure; SameSite=None
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=WxWvIG3bT71h7ATkVioZl8y4bqWGvS7y4pGhm5dRF3e3OcJCvgSN4l%2FVLeTav4k4VFILj7IN03%2FyV68Wy0O%2FPJNcZ2GbvNqNSesoBvb7IgU2zlclgGkWOKlqBzC0EEuA2aF59gg%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 86e1770008ed51e7-GRU
+alt-svc: h3=":443"; ma=86400
+
+
+[9060:6180:2024-4-2 11:21:18.576] [process_requst] End for url:https://zoom.us/conf/launch, return code:200, Error:0, Response content size:2168
+[9060:11092:2024-4-2 11:21:18.592] [client_has_installed_app] found path:
+[9060:11092:2024-4-2 11:21:18.592]  ***NULL-POINTER-PLACEHOLDER***
+[9060:11092:2024-4-2 11:21:18.592] [param_query_local_path] path is: C:\Users\bruno\AppData\Roaming\Zoom\ZoomDownload\ dir create response : 1 system error: 1008
+[9060:11092:2024-4-2 11:21:18.592] [downloader_run] State:0
+[9060:4216:2024-4-2 11:21:18.592] [process_requst] start, url:https://zoom.us/client/latest/Installer.exe?archType=x64
+[9060:11092:2024-4-2 11:21:18.592] [client_has_installed_app] found path:
+[9060:11092:2024-4-2 11:21:18.592]  ***NULL-POINTER-PLACEHOLDER***
+[9060:4216:2024-4-2 11:21:48.924] HttpSendRequest API failed1, error code: 12152
+[9060:4216:2024-4-2 11:21:48.981] HttpSendRequest API failed, error code: 0
+[9060:4216:2024-4-2 11:21:48.981] [process_requst] End for url:https://zoom.us/client/latest/Installer.exe?archType=x64, return code:0, Error:1006, Response content size:0
+[9060:11092:2024-4-2 11:21:49.11] [handle_download_job_done] Index: 1 Curr index: 1 StatusCode: 0 Error: 1006 Response is Empty. 
+[9060:11092:2024-4-2 11:22:8.663] [downloader_retry] State:15
+[9060:4216:2024-4-2 11:22:8.663] [process_requst] start, url:https://zoom.us/client/latest/Installer.exe?archType=x64
+[9060:11092:2024-4-2 11:22:36.993] [downloader_cancel] State:1
+[9060:4216:2024-4-2 11:22:38.955] HttpSendRequest API failed1, error code: 12152
+[9060:4216:2024-4-2 11:22:39.188] HttpSendRequest API failed, error code: 0
+[9060:4216:2024-4-2 11:22:39.200] [process_requst] End for url:https://zoom.us/client/latest/Installer.exe?archType=x64, return code:0, Error:1006, Response content size:0
+[9060:11092:2024-4-2 11:22:39.200] Main End
